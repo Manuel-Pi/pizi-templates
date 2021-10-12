@@ -1,0 +1,44 @@
+{
+  "name": "[FTName]-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --env.production",
+    "deploy": "mkdir -p ../pizi-express-server/apps/[FTName] && rm -f -r ../pizi-express-server/apps/[FTName]/* && cp -R ./dist/* ../pizi-express-server/apps/[FTName]",
+    "buildStat": "webpack --env.production  --json > stats.json",
+    "buildDeploy": "npm run build && npm run deploy"
+  },
+  "author": "Manuel-Pi",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/socket.io": "*",
+    "copy-webpack-plugin": "*",
+    "css-loader": "*",
+    "css-minimizer-webpack-plugin": "*",
+    "extract-loader": "*",
+    "file-loader": "*",
+    "less": "*",
+    "less-loader": "*",
+    "optimize-css-assets-webpack-plugin": "*",
+    "source-map-loader": "*",
+    "style-loader": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "*",
+    "@fortawesome/free-regular-svg-icons": "*",
+    "@fortawesome/free-solid-svg-icons": "*",
+    "@fortawesome/react-fontawesome": "*",
+    "pizi-react": "git+https://github.com/Manuel-Pi/pizi-react.git",
+    "react": "*",
+    "react-dom": "*"
+  }
+}
