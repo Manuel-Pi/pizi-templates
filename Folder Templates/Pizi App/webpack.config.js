@@ -6,7 +6,7 @@ module.exports = {
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
-    entry: "./src/frontend/index.tsx",
+    entry: "./src/index.tsx",
 
     output:{
         libraryTarget: 'umd',
@@ -63,11 +63,11 @@ module.exports = {
         }),*/
         new CopyPlugin({
             patterns: [
-                "src/frontend/index.html",
-                "src/frontend/icon.png",
+                "src/index.html",
+                "src/icon.png",
                 "src/manifest.json",
                 {
-                    from: "src/backend",
+                    from: "src/server",
                     to: "server"
                 }
             ],

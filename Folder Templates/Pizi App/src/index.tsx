@@ -14,4 +14,4 @@ declare global {
         const io: any
 }
 
-ReactDOM.render(<App socket={io('/pizi-server')}/>, document.getElementsByTagName("app")[0])
+ReactDOM.render(<App socket={io('/pizi-server')}/>, document.body)

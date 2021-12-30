@@ -1,4 +1,4 @@
-import React, {Component } from 'react';
+import React, {Component } from 'react'
 
 interface AppProps {
     socket: any
@@ -19,10 +19,10 @@ export class App extends Component<AppProps, AppState> {
         // Try to reconnect
         this.props.socket.on("connect", () => {
             // TODO: implement
-        });
+        })
     }
 
     render(){
-        return <div></div>
+        return <app></app>
     }
 }
